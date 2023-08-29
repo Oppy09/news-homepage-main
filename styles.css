@@ -1,0 +1,409 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:hsl(36, 100%, 99%);
+}
+p {
+    font-size: 15px;
+}
+/* main container */
+.container {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3% auto;
+}
+/* navbar / nav section */
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* nav links */
+#navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links .links {
+    margin: 0 1rem;
+    list-style: none;
+}
+.links a {
+    text-decoration: none;
+    color: hsla(240, 100%, 5%, 0.6);
+    transition: all ease-in 250ms;
+}
+.links a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+/* body section */
+.container .body {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* body top-container */
+.body .top-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+/* home section */
+.top-container #home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* illustration image container */
+#home .illustration {
+    width: 100%;
+    height: 100%;;
+}
+/* illustration image */
+.illustration img {
+    width: 100%;
+    height: auto;
+}
+
+/* home section contents */
+#home .contents {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+/* contents header */
+.contents .header {
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.header header h1 {
+    font-size: 2.5rem;
+    width: 80%;
+    font-weight: 800;
+}
+/* contents description */
+.contents .description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 1rem;
+}
+.description article p {
+    color: hsla(240, 100%, 5%, 0.7);
+    line-height: 1.5;
+    width: 90%;
+}
+/* description cta */
+.description a {
+    width: 12rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: hsl(36, 100%, 99%);
+    text-transform: uppercase;
+    background-color: hsl(5, 85%, 63%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 5px;
+    transition: all ease-in 250ms;
+}
+.description a:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+
+/* new section */
+.top-container #new {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1rem;
+    background-color: hsl(240, 100%, 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* section header */
+#new header {
+    font-size: 2rem;
+    color: hsl(35, 77%, 62%);
+    font-weight: 700;
+}
+/* section articles */
+#new article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/* article headlines */
+article .headline a {
+    color: hsl(36, 100%, 99%);
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all ease-in 100ms;
+}
+article .headline a:hover {
+    color: hsl(35, 77%, 62%);
+}
+/* article write-up */
+article span p {
+    line-height: 1.5;
+    color: hsla(208, 100%, 97%, 0.5);
+    width: 90%;
+}
+/* article separator */
+hr {
+    color: hsla(208, 100%, 97%, 0.5);
+}
+
+
+/* bottom container */
+.body .bottom-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
+}
+
+/* popular section */
+.bottom-container #popular {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+/* section illustration */
+#popular .image-wrapper {
+    width: 100%;
+}
+/* illustration image */
+.image-wrapper img {
+    width: 100%;
+}
+/* section details */
+#popular .details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+/* section index */
+.details .index {
+    color: hsl(233, 8%, 79%);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+/* section link */
+.details .article-link a {
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    font-weight: 800;
+    transition: all ease-in 100ms;
+}
+.details .article-link a:hover {
+    color: hsl(5, 85%, 63%);
+}
+/* section paragraph */
+.details .introduction p {
+    color: hsla(240, 100%, 5%, 0.7);
+    width: 90%;
+}
+/* trending section */
+.bottom-container #trending {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+#trending .details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 5px 0;   
+}
+.details .index {
+    color: hsl(233, 8%, 79%);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+/* categories section */
+.bottom-container #categories {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;   
+}
+#categories .details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+#categories .details .introduction p {
+    width: 100%;
+}
+
+/* attribution section */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* media query */
+@media (min-width: 950px) and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+@media (min-width: 600px) and (max-width: 900px)  {
+    body {
+        padding: 2rem 1rem;
+    }
+    .container {
+        width: 100%;
+    }
+    .header header h1 {
+        width: 100%;
+    }
+    #popular .image-wrapper {
+        height: 100%;
+    }
+    .image-wrapper img {
+        height: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    .container {
+        width: 90%;
+        height: fit-content;
+        margin: 5% auto;
+        position: relative;
+    }
+    .body .top-container {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-container #home {
+        align-items: center;
+    }
+    #home .contents {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .contents .header {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .header header h1 {
+        width: 100%;
+    }
+    .contents .description {
+        width: 100%;
+        margin: 0;
+    }
+    .description article p {
+        width: 100%;
+    }
+    .top-container #new {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    .body .bottom-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .invisible {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        z-index: 10;
+    }
+    .hamburger img {
+        position: absolute;
+        right: .5rem;
+        top: .75rem;
+    }
+    .navigation-menu {
+        position: absolute;
+        right: -1rem;
+        top: -1rem;
+        width: 80%;
+        height: 100vh;
+        background-color: hsl(36, 100%, 99%);
+        transition: all ease-in 250ms;    
+        box-shadow: 0 25px 25px hsl(240, 100%, 5%);
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: start !important;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 20%;
+    }
+    .links a {
+        color: hsl(240, 100%, 5%);
+    }
+}
