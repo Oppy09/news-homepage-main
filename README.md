@@ -35,6 +35,8 @@ Users should be able to:
 - Live Site URL: (https://oppy09.github.io/news-homepage-main/)
 
 ## My process
+  I started I looked up the original README.md file to get to know the objectives of the challenge and what styles or resources I would need to solve the challenge
+  Then started by making a simple pen-paper sample of the page before proceeding to creating the page itself.
   I started by writing out my html code working from top to bottom depending on how the elements are aligned and their requirements 
   Then i styled my contents based on the design provided
   I focused on the interactive and focus states of some elements
